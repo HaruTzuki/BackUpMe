@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0-windows</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\BackUp.Data\BackUpMe.Data.csproj" />
+		<ProjectReference Include="..\BackUpMe.Common\BackUpMe.Common.csproj">
+			<Project>{8ca60a64-0a50-4087-9d39-208ee47d9c8b}</Project>
+			<Name>BackUpMe.Common</Name>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\BackUpMe.Infastructure\BackUpMe.Infastructure.csproj" />
+	</ItemGroup>
+
+</Project>

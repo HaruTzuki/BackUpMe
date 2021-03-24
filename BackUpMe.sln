@@ -15,12 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackUpMe.Data", "BackUp.Dat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackUpMe.Service", "BackUpMe.Service\BackUpMe.Service.csproj", "{933854E1-C023-4782-865C-A2B816DDCF8B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A9A1158-5EDA-4873-AC85-CD7BF9AB577C}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackUpMe.Process", "BackUpMe.Process\BackUpMe.Process.csproj", "{8A8D6227-8249-42EB-A1FF-251802D19AD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackUpMe.Process", "BackUpMe.Process\BackUpMe.Process.csproj", "{8A8D6227-8249-42EB-A1FF-251802D19AD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
