@@ -5,6 +5,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\BackUp.Data\BackUpMe.Data.csproj" />
 		<ProjectReference Include="..\BackUpMe.Common\BackUpMe.Common.csproj">
 			<Project>{8ca60a64-0a50-4087-9d39-208ee47d9c8b}</Project>
