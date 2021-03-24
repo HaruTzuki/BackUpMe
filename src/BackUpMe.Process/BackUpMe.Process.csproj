@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>C:\Users\dvlachopoulos\source\repos\BackUpMe\BackUpMe\bin\Debug\</OutputPath>
+    <OutputPath>../../dist/debug</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

@@ -11,17 +11,17 @@ namespace BackUpMe.Data.Domain
 {
 	public class JobRepository : IJobRepository
 	{
-		private readonly ModelContext context;
 
 		public JobRepository()
 		{
-			context = new ModelContext();
+			
 		}
 
 		public async Task<bool> DeleteJob(Job job)
 		{
 			try
 			{
+				using var context = new ModelContext();
 				context.Jobs.Remove(job);
 				return await context.SaveChangesAsync() > 0;
 			}
@@ -36,6 +36,7 @@ namespace BackUpMe.Data.Domain
 		{
 			try
 			{
+				using var context = new ModelContext();
 				return await context.Jobs.FirstOrDefaultAsync(j=>j.Id == id);
 			}
 			catch (Exception ex)
@@ -49,7 +50,7 @@ namespace BackUpMe.Data.Domain
 		{
 			try
 			{
-				var c = await context.Jobs.ToListAsync();
+				using var context = new ModelContext();
 				return await context.Jobs.ToListAsync();
 			}
 			catch (Exception ex)
@@ -63,7 +64,8 @@ namespace BackUpMe.Data.Domain
 		{
 			try
 			{
-				if(job == null)
+				using var context = new ModelContext();
+				if (job == null)
 				{
 					return false;
 				}
@@ -82,7 +84,8 @@ namespace BackUpMe.Data.Domain
 		{
 			try
 			{
-				if(job == null)
+				using var context = new ModelContext();
+				if (job == null)
 				{
 					return false;
 				}
